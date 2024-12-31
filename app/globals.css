@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.navlink::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #c2410c;
+    left: 0;
+    margin: auto;
+    transition: .3s;
+    right: 0;
+}
+
+.navlink:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #c2410c;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slick-cloned {
+    display: none;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.user-menu {
+    display: none;
+}
+
+.user-menu-button:focus~.user-menu {
+    display: block;
+}
+
+
+
+.slider-container .slick-slide {
+    overflow: visible;
+}
