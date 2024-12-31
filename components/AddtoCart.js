@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { toast } from "react-toastify";
 
 function AddtoCart({ product }) {
   const handleAddToCart = () => {
@@ -21,7 +22,7 @@ function AddtoCart({ product }) {
     // Save updated cart back to localStorage
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
-    alert(`${product.name} has been added to the cart.`);
+    toast.success(`${product.name} has been added to the cart.`);
   };
 
   return (
