@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
-
+import prisma from "@/util/db.config";
 export async function GET(request, { params }) {
   try {
     const userId = parseInt(params.id);
