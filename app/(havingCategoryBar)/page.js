@@ -10,7 +10,7 @@ export default async function Home() {
   return (
     <div>
       <SimpleCarousel>
-        <div className="h-[430px]">
+        <div className="md:h-[430px] h-fit">
           <Image
             src={"/slide-1.webp"}
             width={1366}
@@ -18,7 +18,7 @@ export default async function Home() {
             alt="A Product Image"
           />
         </div>
-        <div className="h-[430px]">
+        <div className="md:h-[430px] h-fit">
           <Image
             src={"/slide-2.webp"}
             width={1366}
@@ -26,7 +26,7 @@ export default async function Home() {
             alt="A Product Image"
           />
         </div>
-        <div className="h-[430px]">
+        <div className="md:h-[430px] h-fit">
           <Image
             src={"/slide-3.webp"}
             width={1366}
