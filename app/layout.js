@@ -21,7 +21,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 export const metadata = {
-  title: "Ventura | Online E-commerce Platform",
+  title: "Farhan's Project | Online E-commerce Platform",
   description:
     "Ventura is an e-commerce (showcase) project developed using Next.js 14 and Prisma. Created by Hafiz Muhammad Farhan, this project provides a seamless shopping experience with efficient server-side rendering, user-friendly interfaces, and robust backend support.",
 };
